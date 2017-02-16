@@ -49,6 +49,15 @@ life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
 
+// DonkeyPunch Vector Building Variables
+BuildPosX = 0;
+BuildPosY = 2;
+BuildPosZ = 1;
+BuildVecYaw = 0;
+BuildVecPitch = 0;
+BuildVecRoll = 0;
+life_container_activeObjClassName = "";
+
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];
 life_settings_enableSidechannel = profileNamespace getVariable ["life_enableSidechannel",true];
