@@ -55,7 +55,11 @@ if (isNull _curObject) exitWith {
     };
 };
 
-if ((_curObject isKindOf "B_supplyCrate_F" || _curObject isKindOf "Box_IND_Grenades_F") && {player distance _curObject < 3} ) exitWith {
+_type = typeOf _curObject;
+_lifeContainers = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "LifeContainers");
+_lifeFurniture = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "BuildableFurniture");
+_lifeContainers = _lifeContainers + _lifeFurniture;
+if ((_type in _lifeContainers) && {player distance _curObject < 3} ) exitWith {
     if (alive _curObject) then {
         [_curObject] call life_fnc_containerMenu;
     };

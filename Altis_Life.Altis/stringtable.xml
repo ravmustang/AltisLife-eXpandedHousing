@@ -12120,5 +12120,62 @@
             <Russian>%1 - %2 депозит в размере $%3 в свой банк. Банковский баланс: $%4 на руку Баланс: $%5</Russian>
             <German>%1 - %2 hat $%3 auf sein Bankkonto eingezahlt. Bankkonto: $%4  Bargeld: $%5</German>
         </Key>
+		<Key ID="STR_Item_FurnitureDK">
+            <Original>Big Chief Desk</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureCH">
+            <Original>Sniper's Chair</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureBS">
+            <Original>BagFence Short</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureOL">
+            <Original>Open Laptop</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureCT">
+            <Original>Camping Table</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureSB">
+            <Original>Sleeping Bag</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureSBBL">
+            <Original>Sleeping Bag Blue</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureSBBR">
+            <Original>Sleeping Bag Brown</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureSCH">
+            <Original>Sun Chair</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureSCHG">
+            <Original>Sun Chair Green</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureTA">
+            <Original>Tent A</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureMA">
+            <Original>Map of Altis</Original>
+        </Key>
+		<Key ID="STR_Item_FurniturePV">
+            <Original>Vertical Pallet</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureMR">
+            <Original>Metal Rack</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureWB">
+            <Original>Shelves Wood Blue</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureFMR">
+            <Original>FM Radio</Original>
+        </Key>
+		<Key ID="STR_Item_FurniturePG">
+            <Original>Portable Generator</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureTT">
+            <Original>Target</Original>
+        </Key>
+		<Key ID="STR_Item_FurnitureWT">
+            <Original>Wooden Table</Original>
+        </Key>
     </Package>
 </Project>

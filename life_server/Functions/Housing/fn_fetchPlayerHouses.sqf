@@ -8,7 +8,7 @@
     1. Fetches all the players houses and sets them up.
     2. Fetches all the players containers and sets them up.
 */
-private ["_query","_containers","_containerss","_houses"];
+private ["_query","_containers","_containerss","_houses","_furnituress"];
 params [
     ["_uid","",[""]]
 ];
@@ -18,6 +18,7 @@ _query = format ["SELECT pid, pos, classname, inventory, gear, dir, id FROM cont
 _containers = [_query,2,true] call DB_fnc_asyncCall;
 
 _containerss = [];
+_furnituress = [];
 {
     _position = call compile format ["%1",_x select 1];
     _house = nearestObject [_position, "House"];
@@ -26,9 +27,18 @@ _containerss = [];
     if (_trunk isEqualType "") then {_trunk = call compile format ["%1", _trunk];};
     _gear = [_x select 4] call DB_fnc_mresToArray;
     if (_gear isEqualType "") then {_gear = call compile format ["%1", _gear];};
+    //furniture and container split
+	_className = _x select 2;
+	_type = getText(missionConfigFile >> "CfgDonkeyPunchCustoms" >> _className);
+	_isFurniture = getNumber(missionConfigFile >> "VirtualItems" >> _type >> "furniture") isEqualTo 1;
     _container = createVehicle[_x select 2,[0,0,999],[],0,"NONE"];
     waitUntil {!isNil "_container" && {!isNull _container}};
-    _containerss pushBack _container;
+    if!(_isFurniture)then{
+		_containerss pushBack _container;
+	}else{
+		_furnituress pushBack _container;
+		_container enableSimulationGlobal false;
+	};
     _container allowDamage false;
     _container setPosATL _position;
     _container setVectorDirAndUp _direction;

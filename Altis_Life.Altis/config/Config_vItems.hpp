@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw", "storagesmall", "storagebig", "furnituredesk", "furniturechair", "furniturebagshort", "furnitureopenlaptop", "furniturecampingtable", "furnituresleepingbag", "furnituresleepingbagblue", "furnituresleepingbagbrown", "furnituresunchair", "furnituresunchairgreen", "furnituretenta", "furnituremapaltis", "furniturepalletvert", "furnituremetalrack", "furniturewoodblue", "furniturefmradio", "furnitureportgen", "furnituretarget", "furniturewoodtable" };
     };
 
     class med_market {
@@ -268,25 +268,338 @@ class VirtualItems {
 
     class storagesmall {
         variable = "storageSmall";
-        displayName = "STR_Item_StorageBS";
+		displayName = "STR_Item_StorageBS";
         weight = 5;
-        buyPrice = 75000;
-        sellPrice = 50000;
+        buyPrice = 82500;
+        sellPrice = 55000;
+        varPrice = 1;
+        maxPrice = 55000;
+        minPrice = 55000;
+        factor = 0;
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageSmall.paa";
+		furniture = false;
     };
 
     class storagebig {
         variable = "storageBig";
         displayName = "STR_Item_StorageBL";
         weight = 10;
-        buyPrice = 150000;
-        sellPrice = 125000;
+        buyPrice = 165000;
+        sellPrice = 137500;
+        varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+        factor = 0;
         illegal = false;
         edible = -1;
         icon = "icons\ico_storageBig.paa";
+		furniture = false;
     };
+
+	class furnituredesk {
+		variable = "furnitureDesk";
+        displayName = "STR_Item_FurnitureDK";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_TableDesk_F.jpg";
+		furniture = true;
+	};
+	
+	class furniturechair {
+		variable = "furnitureChair";
+        displayName = "STR_Item_FurnitureCH";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CampingChair_V1_F.jpg";
+		furniture = true;
+	};
+	
+	class furniturebagshort {
+		variable = "furnitureBagShort";
+        displayName = "STR_Item_FurnitureBS";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_BagFence_Short_F.jpg";
+		furniture = true;
+	};
+	
+	class furnitureopenlaptop {
+		variable = "furnitureOpenLaptop";
+        displayName = "STR_Item_FurnitureOL";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Laptop_unfolded_F.jpg";
+		furniture = true;
+	};
+	
+	class furniturecampingtable {
+		variable = "furnitureCampingTable";
+        displayName = "STR_Item_FurnitureCT";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CampingTable_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituresleepingbag {
+		variable = "furnitureSleepingBag";
+        displayName = "STR_Item_FurnitureSB";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sleeping_bag_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituresleepingbagblue {
+		variable = "furnitureSleepingBagBlue";
+        displayName = "STR_Item_FurnitureSBBL";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sleeping_bag_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituresleepingbagbrown {
+		variable = "furnitureSleepingBagBrown";
+        displayName = "STR_Item_FurnitureSBBR";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sleeping_bag_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituresunchair {
+		variable = "furnitureSunChair";
+        displayName = "STR_Item_FurnitureSCH";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sun_chair_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituresunchairgreen {
+		variable = "furnitureSunChairGreen";
+        displayName = "STR_Item_FurnitureSCHG";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Sun_chair_green_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituretenta {
+		variable = "furnitureTentA";
+        displayName = "STR_Item_FurnitureTA";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_TentA_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituremapaltis {
+		variable = "furnitureMapAltis";
+        displayName = "STR_Item_FurnitureMA";
+        weight = 10;
+        buyPrice = 200000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\MapBoard_altis_F.jpg";
+		furniture = true;
+	};
+	
+	class furniturepalletvert {
+		variable = "furniturePalletVert";
+        displayName = "STR_Item_FurniturePV";
+        weight = 10;
+        buyPrice = 500000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Pallet_vertical_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituremetalrack {
+		variable = "furnitureMetalRack";
+        displayName = "STR_Item_FurnitureMR";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Metal_wooden_rack_F.jpg";
+		furniture = true;
+	};
+	class furniturewoodblue {
+		variable = "furnitureWoodBlue";
+        displayName = "STR_Item_FurnitureWB";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_ShelvesWooden_blue_F.jpg";
+		furniture = true;
+	};
+	
+	class furniturefmradio {
+		variable = "furnitureFMRadio";
+        displayName = "STR_Item_FurnitureFMR";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_FMradio_F.jpg";
+		furniture = true;
+	};
+	
+	class furnitureportgen {
+		variable = "furniturePortGen";
+        displayName = "STR_Item_FurniturePG";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_Portable_generator_F.jpg";
+		furniture = true;
+	};
+	
+	class furnituretarget {
+		variable = "furnitureTarget";
+        displayName = "STR_Item_FurnitureTT";
+        weight = 10;
+        buyPrice = 500000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Target_F.jpg";
+		furniture = true;
+	};
+	
+	class furniturewoodtable {
+		variable = "furnitureWoodTable";
+        displayName = "STR_Item_FurnitureWT";
+        weight = 10;
+        buyPrice = 250000;
+        sellPrice = 175000;
+		varPrice = 1;
+        maxPrice = 137500;
+        minPrice = 137500;
+		factor = 0;
+        illegal = false;
+        edible = -1;
+        icon = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WoodenTable_small_F.jpg";
+		furniture = true;
+	};
 
     //Mined Items
     class oil_unprocessed {

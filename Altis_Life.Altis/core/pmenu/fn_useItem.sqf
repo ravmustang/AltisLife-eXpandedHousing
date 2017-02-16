@@ -45,12 +45,12 @@ switch (true) do {
         closeDialog 0;
     };
 
-    case (_item isEqualTo "storagesmall"): {
-        [false] call life_fnc_storageBox;
-    };
-
-    case (_item isEqualTo "storagebig"): {
-        [true] call life_fnc_storageBox;
+    _itemConverted = getText(missionConfigFile >> "CfgDonkeyPunchCustoms" >> _item);
+	_lifeContainers = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "LifeContainers");
+	_lifeFurniture = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "BuildableFurniture");
+	_lifeContainers = _lifeContainers + _lifeFurniture;
+	case (_itemConverted in _lifeContainers): {
+        [_item] call life_fnc_storageBox;
     };
 
     case (_item isEqualTo "spikeStrip"): {

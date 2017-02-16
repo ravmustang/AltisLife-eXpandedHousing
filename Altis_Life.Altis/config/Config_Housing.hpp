@@ -29,6 +29,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {2,0,3.5};
+			furniture = 12;
         };
         
         class Land_i_House_Big_02_V2_F : Land_i_House_Big_02_V1_F{};
@@ -43,6 +44,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {0,-2,3.8};
+			furniture = 16;
         };
 
         class Land_i_House_Big_01_V2_F : Land_i_House_Big_01_V1_F{};
@@ -57,6 +59,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {-1.5,0,2};
+			furniture = 8;
         };
 
         class Land_i_House_Small_01_V2_F : Land_i_House_Small_01_V1_F{};
@@ -71,6 +74,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {2,0,2.4};
+			furniture = 8;
         };
 
         class Land_i_House_Small_02_V2_F : Land_i_House_Small_02_V1_F{};
@@ -85,6 +89,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {-3.3,1,2.5};
+			furniture = 12;
         };
 
         class Land_i_House_Small_03_V3_F : Land_i_House_Small_03_V1_F{};
@@ -98,6 +103,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {0.90,2.3,4};
+			furniture = 6;
         };
 
         class Land_i_Stone_HouseSmall_V2_F : Land_i_Stone_HouseSmall_V1_F{};
@@ -117,6 +123,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {{5909.93,10491.9,-0.153875}};
             lightPos[] = {0.5,0.5,7.5};
+			furniture = 20;
         };
         
         class Land_Hotel_02_F {
@@ -128,6 +135,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {0,1,3};
+			furniture = 32;
         };
         
         class Land_GarageShelter_01_F {
@@ -139,6 +147,7 @@ class Housing {
             garageSpawnDir = 90;
             garageBlacklists[] = {{10998,9698.24,-0.219376}};
             lightPos[] = {0,0,2};
+			furniture = 6;
         };
         
         class Land_House_Big_02_F {
@@ -150,6 +159,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {0,0,2};
+			furniture = 8;
         };
         
         class Land_School_01_F {
@@ -161,6 +171,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {{10957,9532.16,-0.528702}};
             lightPos[] = {0,0,2.65};
+			furniture = 32;
         };
         
         class Land_House_Big_04_F {
@@ -172,6 +183,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {{5879.2,10002.7,-0.278984},{9508.48,13082.7,0.021286}};
             lightPos[] = {0,0,3.5};
+			furniture = 8;
         };
         
         class Land_House_Big_03_F {
@@ -183,6 +195,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {{11507.2,2447.47,-0.145175}};
             lightPos[] = {0,0,3.5};
+			furniture = 12;
         };
         
         // Houses without Garages
@@ -195,6 +208,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {-1,2,2};
+			furniture = 8;
         };
         
         class Land_House_Small_03_F {
@@ -206,6 +220,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {-2.35,1,2.8};
+			furniture = 12;
         };
         
         class Land_House_Small_06_F {
@@ -217,6 +232,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {3,-2,2};
+			furniture = 12;
         };
         
         class Land_Slum_03_F {
@@ -228,6 +244,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {1,2,3};
+			furniture = 16;
         };
         
         class Land_Addon_04_F {
@@ -239,6 +256,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {0,-2,4};
+			furniture = 8;
         };
         
         class Land_Slum_01_F {
@@ -250,6 +268,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {1.5,0,3.2};
+			furniture = 6;
         };
         
         class Land_House_Small_05_F {
@@ -261,6 +280,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {2,1,2};
+			furniture = 8;
         };
         
         class Land_House_Small_02_F {
@@ -272,6 +292,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {-2,0,2.4};
+			furniture = 8;
         };
         
         class Land_House_Small_04_F {
@@ -283,6 +304,7 @@ class Housing {
             garageSpawnDir = 0;
             garageBlacklists[] = {};
             lightPos[] = {1.2,0.2,2.5};
+			furniture = 8;
         };
 
     };

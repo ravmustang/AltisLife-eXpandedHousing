@@ -21,11 +21,9 @@ _action = [
 
 if (_action) then {
     private ["_box","_diff"];
-    _box = switch (_containerType) do {
-        case ("B_supplyCrate_F"): {"storagebig"};
-        case ("Box_IND_Grenades_F"): {"storagesmall"};
-        default {"None"};
-    };
+    private ["_box","_diff"];
+	_box = "";
+	_box = getText(missionConfigFile >> "CfgDonkeyPunchCustoms" >> _containerType);
     if (_box == "None") exitWith {};
 
     _diff = [_box,1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
@@ -37,12 +35,21 @@ if (_action) then {
         [_container] remoteExecCall ["TON_fnc_deleteDBContainer",RSERV];
     };
 
-    {
-        if (_x == _container) then {
-            _containers deleteAt _forEachIndex;
-        };
-    } forEach _containers;
-    _house setVariable ["containers",_containers,true];
+    if !((getNumber(missionConfigFile >> "VirtualItems" >> _box >> "furniture")) isEqualTo 1) then {
+		{
+			if (_x == _container) then {
+				_containers deleteAt _forEachIndex;
+			};
+		} forEach _containers;
+		_house setVariable ["containers",_containers,true];
+	}else{
+		{
+			if (_x == _container) then {
+				_furnitures deleteAt _forEachIndex;
+			};
+		} forEach _furnitures;
+		_house setVariable ["furnitures",_furnitures,true];
+	};
 
     [true,_box,1] call life_fnc_handleInv;
 };

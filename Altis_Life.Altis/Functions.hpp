@@ -240,6 +240,7 @@ class Life_Client_Core {
         file = "core\housing";
         class buyHouse {};
         class buyHouseGarage {};
+		class buildFurniture {};
         class containerMenu {};
         class copBreakDoor {};
         class copHouseOwner {};

@@ -13,7 +13,9 @@ _containers = [_query,2,true] call DB_fnc_asyncCall;
 if (count _containers isEqualTo 0) exitWith {};
 {
     _pos = call compile format ["%1",_x select 1];
-    _container = nearestObjects[_pos,["Box_IND_Grenades_F","B_supplyCrate_F"],12];
+    _lifeContainers = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "LifeContainers");
+	_lifeFurniture = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "BuildableFurniture");
+	_lifeContainers = _lifeContainers + _lifeFurniture;
     {
         deleteVehicle _x;
     } forEach _container;
