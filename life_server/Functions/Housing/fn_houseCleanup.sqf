@@ -16,6 +16,7 @@ if (count _containers isEqualTo 0) exitWith {};
     _lifeContainers = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "LifeContainers");
 	_lifeFurniture = getArray(missionConfigFile >> "CfgDonkeyPunchCustoms" >> "BuildableFurniture");
 	_lifeContainers = _lifeContainers + _lifeFurniture;
+	_container = nearestObjects[_pos,_lifeContainers,15];
     {
         deleteVehicle _x;
     } forEach _container;
