@@ -77,4 +77,19 @@ if (_action) then {
         } forEach _containers;
     };
     _house setVariable ["containers",nil,true];
+	
+	_furnitures = _house getVariable ["furnitures",[]];
+    if (count _furnitures > 0) then {
+        {
+            _x setVariable ["Trunk",nil,true];
+
+            if (life_HC_isActive) then {
+                [_x] remoteExecCall ["HC_fnc_sellHouseContainer",HC_Life];
+            } else {
+                [_x] remoteExecCall ["TON_fnc_sellHouseContainer",RSERV];
+            };
+
+        } forEach _furnitures;
+    };
+    _house setVariable ["furnitures",nil,true];
 };
